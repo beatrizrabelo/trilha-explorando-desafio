@@ -25,8 +25,7 @@ namespace SistemaHospedagem.Models
             }
             else
             {
-                //obs.: analisar outra exceção
-                throw new Exception("Exceção: a quantidade de hospedes é maior que a capacidade.");
+                throw new ArgumentOutOfRangeException("Exceção: a quantidade de hospedes é maior que a capacidade.");
             }
         }
 
